@@ -1,0 +1,335 @@
+html {
+    font-size: 30px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+body {
+    background-color: lightgrey;
+    margin: 0%;
+}
+
+/* NAV */
+
+nav {
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+    padding-top: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+#links {
+    color: lightgrey;
+    z-index: 1;
+}
+
+a {
+    background-color: lightgrey;
+    cursor: pointer;
+    color: black;
+    border-radius: 10px;
+    font-size: 75%;
+    margin: 30px;
+    padding: 10px;
+    z-index: 1;
+}
+
+a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* MENU' */
+
+#menu {
+    display: none;
+    z-index: 1;
+    position: absolute;
+    right: 10px;
+}
+
+#menu div {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    margin: 4px;
+    border-radius: 10px;
+
+}
+
+@media (max-width: 600px) {
+
+    #links {
+        display: none;
+    }
+
+    #menu {
+        display: block;
+    }
+}
+
+/* HEADER */
+
+header {
+    height: 500px;
+    background-image: url(Images/header.jpeg);
+    background-size:cover;
+    position: relative;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1{
+    color: white;
+    text-align: center;
+    max-width: 600px;
+    font-size: 200%;
+    z-index: 1;
+    font-family: 'Varela Round', sans-serif;
+}
+
+#overlay {
+    background-color: rgba(0, 0, 0, .3);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+/* ARTICLE */
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+article section {
+    margin: 15px;
+    max-width: 800px;
+    min-width: 500px;
+    margin-bottom: 100px;
+    padding: 5px;
+    display: flex;
+    font-family: 'Varela Round', sans-serif;
+}
+
+article section .numero {
+    color: grey;
+    font-size: 130%;
+    margin-right: 8px;
+    margin-top: 5px;
+    font-weight: 400;
+}
+
+article section .esercizio {
+    width: 100%;
+    padding: 7px;
+    margin-right: 40px;
+    margin-left: auto;
+}
+
+article section .esercizio em {
+    color: grey;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+article section .esercizio p {
+    font-size: 70%;
+    margin-bottom: 30px;
+}
+
+article section .immagine {
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    border-radius: 15px;
+    background-position: center;
+}
+
+#benchpress {
+    background-image: url(Images/benchpress.jpeg);
+}
+
+#squat {
+    background-image: url(Images/squat.jpeg);
+}
+
+#deadlift {
+    background-image: url(Images/deadlift.jpeg);
+}
+
+/* FOOTER */
+
+footer {
+    background-color: black;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    color: lightgrey;
+    font-size: 75%;
+    margin: 30px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+    header{
+        font-size: 80%;
+    }
+
+    #remember {
+        margin-top: -30px;
+        margin-bottom: 50px;
+    }
+
+    form {
+        margin-bottom: 50px;
+    }
+
+
+
+}
+
+@media (max-width: 500px){
+    html {
+        font-size: 17px;
+    }
+
+
+    header{
+        height: 300px;
+        font-size: 15px;
+    }
+
+    article section {
+        min-width: 200px;
+        margin-bottom: 30px; 
+    } 
+
+    article section .numero {
+        margin-left: 10px;
+    } 
+
+    article section .immagine {
+        height: 350px;
+        width: 250px;
+    }
+
+    footer {
+        margin-top: -50px;
+        height: 50%;
+    }
+
+    footer p{
+        text-align: center;
+        font-size: 75%;
+    }
+
+    #remember {
+        font-size: 75%;
+    }
+
+    form {
+        font-size: 90%;
+        margin-top: -150px;
+        margin-bottom: 50px;
+    }
+
+    #cal-view p {
+        margin-top: -50px;
+        margin-bottom: 100px;
+    }
+
+    #apispotify {
+        margin-bottom: 50px;
+    }
+}
+
+/* API */
+
+/* API CALORIES */
+
+#remember {
+    height: 200px;
+    margin-right: 85px;
+    margin-left: 85px;
+    font-size: 90%;
+    text-align: center;
+    color: rgb(48, 48, 48);
+}
+
+#searchFood {
+    height: 125px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    color: rgb(48, 48, 48);
+}
+
+#cal-view {
+    text-align: center;
+    margin-top: -30px;
+    margin-bottom: 60px;
+    text-decoration: underline;
+    color: black;
+    font-size: 80%;
+}
+
+/* API SPOTIFY */
+
+.hidden {
+    display: none;
+}
+
+#apispotify {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.listSongs {
+    margin: 10px;
+    padding: 5px;
+    max-width: 145px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+
+#apispotify img{
+    max-width: 100%;
+    border-radius: 150px;
+}
+
+#apispotify span {
+    font-size: 60%;
+    text-align: center;
+}
